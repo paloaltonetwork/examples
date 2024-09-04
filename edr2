@@ -1,0 +1,6 @@
+Script:
+$fileContent = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($item.FullName))
+
+Alert: Credential Gathering Protection
+Description: Attempt to read git saved passwords
+Sub category: Unsecured credentials in files
